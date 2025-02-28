@@ -31,7 +31,7 @@ const Modal = ({ onClose, name, category }: Props) => {
       const filtered = soldAssets.filter((asset) => asset.name === name);
       setAsset(filtered[0]);
     }
-  }, [name, soldAssets, currentAssets, category]);
+  }, [name, category]);
 
   // Handle modal close
   const handleClose = () => {

@@ -15,7 +15,9 @@ const LinkButton = ({ name, path, style }: Props) => {
       }  font-semibold px-12 py-3 text-sm rounded-full uppercase group text-center`}
     >
       {name}
-      <span className="bi-arrow-up-right ms-2 text-xs transition-transform duration-300 group-hover:rotate-45"></span>
+      <span className="inline-block transition-transform duration-300 group-hover:rotate-45 ms-3">
+        <i className="bi bi-arrow-up-right text-xs"></i>
+      </span>
     </Link>
   );
 };

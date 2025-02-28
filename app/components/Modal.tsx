@@ -9,6 +9,7 @@ import {
 } from "../services/assets";
 import Image, { StaticImageData } from "next/image";
 import CurrentDescription from "./CurrentDescription";
+import SoldDescription from "./SoldDescription";
 
 interface Props {
   onClose: () => void;

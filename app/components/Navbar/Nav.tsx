@@ -54,7 +54,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
           <motion.a
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
             href="/"
             className="text-2xl uppercase flex lg:gap-x-5 gap-x-2"
           >
@@ -81,7 +81,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.2 }}
+              transition={{ duration: 0.2 }}
               href="/about-us"
               className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
@@ -98,7 +98,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
                 }}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.2 }}
+                transition={{ duration: 0.2 }}
                 onClick={() => (hovered ? setHovered(false) : setHovered(true))}
                 className="relative transition-colors font-medium uppercase text-sm"
               >
@@ -135,7 +135,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               }}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.2 }}
+              transition={{ duration: 0.2 }}
               href="/investor-portal"
               className={`relative transition-colors font-medium uppercase text-sm mt-3`}
             >
@@ -168,7 +168,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               href="/"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.2 }}
+              transition={{ duration: 0.2 }}
               className="bg flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded"
             >
               Investor's Login

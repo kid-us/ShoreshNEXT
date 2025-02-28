@@ -1,5 +1,7 @@
+"use client";
+
+import Container from "@/app/components/Container";
 import { motion } from "motion/react";
-import Container from "../Container/Container";
 import { useState } from "react";
 
 interface Advantage {

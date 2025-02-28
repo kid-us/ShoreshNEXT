@@ -45,12 +45,12 @@ const Advantage = () => {
           <div className="flex justify-center">
             <div className="lg:w-[50%] my-10">
               <p className="text-center text-gray-200 text-xl">
-                "Success is built on a foundation of trust, expertise, and
+                &quot; Success is built on a foundation of trust, expertise, and
                 vision.
               </p>
               <p className="text-center text-gray-200 text-xl">
                 At Shoresh Group, we honor our heritage while creating new
-                opportunities for the future."
+                opportunities for the future.&quot;
               </p>
             </div>
           </div>
@@ -69,11 +69,7 @@ const Advantage = () => {
                 onMouseEnter={() => setHoveredItem(a.id)}
                 onMouseLeave={() => setHoveredItem(0)}
               >
-                <div
-                // className={`transition-all duration-300 ease-in-out ${
-                //   hoveredItem === a.id ? "-translate-y-10" : "translate-y-0"
-                // }`}
-                >
+                <div>
                   <p className="font-medium text-gray-300">0{a.id}</p>
                   <p className="font-medium lg:text-4xl text-3xl text-white hover:text-gray-400">
                     {a.title}

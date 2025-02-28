@@ -1,35 +1,38 @@
-import {
-  current1,
-  current2,
-  current_11,
-  current_12,
-  current_13,
-  current_14,
-  current_15,
-  current_16,
-  current_21,
-  current_22,
-  current_23,
-  current_24,
-  current_25,
-  current_26,
-  sold1,
-  sold2,
-  sold3,
-  sold_11,
-  sold_12,
-  sold_13,
-  sold_21,
-  sold_22,
-  sold_23,
-  sold_24,
-  sold_25,
-  sold_26,
-} from "../assets";
+import current1 from "@/public/images/assets/current_1.jpg";
+import current_11 from "@/public/images/assets/current_11.jpg";
+import current_12 from "@/public/images/assets/current_12.jpg";
+import current_13 from "@/public/images/assets/current_13.jpg";
+import current_14 from "@/public/images/assets/current_14.jpg";
+import current_15 from "@/public/images/assets/current_15.jpg";
+import current_16 from "@/public/images/assets/current_16.jpg";
+
+import current2 from "@/public/images/assets/current_2.jpg";
+import current_21 from "@/public/images/assets/current_21.jpg";
+import current_22 from "@/public/images/assets/current_22.jpg";
+import current_23 from "@/public/images/assets/current_23.jpg";
+import current_24 from "@/public/images/assets/current_24.jpg";
+import current_25 from "@/public/images/assets/current_25.jpg";
+import current_26 from "@/public/images/assets/current_26.jpg";
+
+import sold1 from "@/public/images/assets/asset_sold_1.jpg";
+import sold_11 from "@/public/images/assets/asset_sold_1_1.jpg";
+import sold_12 from "@/public/images/assets/asset_sold_1_2.jpg";
+import sold_13 from "@/public/images/assets/asset_sold_1_3.jpg";
+
+import sold2 from "@/public/images/assets/asset_sold_2.jpg";
+import sold_21 from "@/public/images/assets/assets_sold_2_1.jpg";
+import sold_22 from "@/public/images/assets/assets_sold_2_2.jpg";
+import sold_23 from "@/public/images/assets/assets_sold_2_3.jpg";
+import sold_24 from "@/public/images/assets/assets_sold_2_4.jpg";
+import sold_25 from "@/public/images/assets/assets_sold_2_5.jpg";
+import sold_26 from "@/public/images/assets/assets_sold_2_5.jpg";
+
+import sold3 from "@/public/images/assets/asset_sold_3.jpg";
+import { StaticImageData } from "next/image";
 
 export interface SoldAssets {
   id: number;
-  img: string;
+  img: StaticImageData | string;
   name: string;
   location?: string;
   category: string;
@@ -43,12 +46,12 @@ export interface SoldAssets {
   profit: string;
   roi: string;
   coc: string;
-  imgs: string[];
+  imgs: StaticImageData[];
 }
 
 export interface CurrentAssets {
   id: number;
-  img: string;
+  img: StaticImageData | string;
   name: string;
   location?: string;
   category: string;
@@ -65,7 +68,7 @@ export interface CurrentAssets {
   built: number;
   price: number;
   lot?: string;
-  imgs: string[];
+  imgs: StaticImageData[];
 }
 
 // Current Assets
@@ -137,7 +140,6 @@ export const currentAssets: CurrentAssets[] = [
 
 //Sold Assets
 export const soldAssets: SoldAssets[] = [
-  // Properties
   {
     id: 1,
     img: sold1,

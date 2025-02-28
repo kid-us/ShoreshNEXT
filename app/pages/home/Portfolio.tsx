@@ -1,8 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { soldAssets } from "../../services/assets";
-import LinkButton from "../Button/LinkButton";
-import Container from "../Container/Container";
-import Modal from "../Modal/Modal";
+import Container from "@/app/components/Container";
+import LinkButton from "@/app/components/Button/LinkButton";
+import Image from "next/image";
 
 const Portfolio = () => {
   const [modal, setModal] = useState<string | null>(null);
@@ -15,7 +17,7 @@ const Portfolio = () => {
   return (
     <>
       {/* Modal */}
-      {modal && (
+      {/* {modal && (
         <Modal
           category="Sold"
           name={modal}
@@ -24,7 +26,7 @@ const Portfolio = () => {
             document.body.style.overflow = "auto";
           }}
         />
-      )}
+      )} */}
 
       <Container>
         <h1 className="font-semibold lg:text-4xl text-3xl ">Portfolio</h1>
@@ -39,13 +41,14 @@ const Portfolio = () => {
               onClick={() => handleAssetClicked(asset.name)}
               className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
             >
-              <img
+              <Image
                 src={asset.img}
                 alt={"asset" + asset.id}
                 className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom"
               />
+
               <div className="px-4 py-5">
-                <p className="font-semibold text-xl mb-2">{asset.name}</p>
+                <p className="text-lg font-semibold mb-2">{asset.name}</p>
                 <div className="flex justify-between">
                   <p className="text-gray-700 text-sm font-semibold">
                     <span className="bi-geo-alt-fill text-secondary me-2"></span>

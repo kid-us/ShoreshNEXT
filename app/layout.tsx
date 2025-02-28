@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["200", "400", "900"],
+  weight: ["400"],
   variable: "--font-sans",
 });
 

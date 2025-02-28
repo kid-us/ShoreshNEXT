@@ -14,7 +14,7 @@ const Hero = () => {
           <p className="lg:text-xl text-lg mt-6 lg:w-[80%] text-white font-medium">
             Unlock Exclusive Real Estate Opportunities Join Shoresh Group’s
             investor network and gain access to exclusive real estate investment
-            opportunities. Whether you're looking for short-term fix-and-flip
+            opportunities. Whether you&apos;re looking for short-term fix-and-flip
             projects or long-term, cash-flowing properties, our private equity
             fund allows you to invest alongside an experienced team with a
             proven track record.

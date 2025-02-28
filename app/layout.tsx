@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import "./app.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -24,9 +27,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+      </Head>
       <body className={sourceSans.className}>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

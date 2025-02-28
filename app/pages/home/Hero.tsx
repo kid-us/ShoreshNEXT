@@ -9,14 +9,14 @@ const Hero = () => {
   const { isToggled } = useToggleStore();
 
   const lgFrames = [
-    "/images/hero2.jpg",
-    "/images/hero3.jpg",
-    "/images/hero4.jpg",
-    "/images/hero5.jpg",
-    "/images/hero6.jpg",
-    "/images/hero7.jpg",
-    "/images/hero8.jpg",
-    "/images/hero9.jpg",
+    "/images/2.jpg",
+    "/images/3.jpg",
+    "/images/4.jpg",
+    "/images/5.jpg",
+    "/images/6.jpg",
+    "/images/7.jpg",
+    "/images/8.jpg",
+    "/images/9.jpg",
   ];
 
   return (

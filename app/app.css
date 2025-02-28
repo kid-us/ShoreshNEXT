@@ -1,0 +1,47 @@
+.nav {
+  background: rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+.hero-img {
+  animation: scaleAnimation 10s ease-in-out infinite alternate;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.hero-before-hide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 17, 0.584);
+
+  z-index: -1;
+  height: 108.5dvh;
+}
+
+.hero-after-hide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 17, 0.584);
+
+  z-index: -1;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

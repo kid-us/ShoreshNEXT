@@ -71,7 +71,7 @@ const AllAssets = () => {
       setCurrentPage(newPage);
     }
   };
-  
+
   return (
     <>
       {/* Modal */}

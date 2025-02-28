@@ -171,7 +171,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
               transition={{ duration: 0.2 }}
               className="bg flex items-center font-semibold uppercase text-white transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded"
             >
-              Investor's Login
+              Investor&apos;s Login
             </motion.a>
           </div>
         </div>

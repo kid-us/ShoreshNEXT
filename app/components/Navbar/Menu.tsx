@@ -71,7 +71,7 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
                 href="/"
                 className="flex items-center justify-center font-semibold uppercase transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded bg-white"
               >
-                Investor's Login
+                Investor&apos;s Login
               </Link>
             </div>
           </div>

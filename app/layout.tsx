@@ -8,11 +8,13 @@ import Footer from "./Footer";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "900"],
+  weight: ["600"],
+  variable: "--font-playfair",
 });
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   weight: ["200", "400", "900"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -27,13 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        />
-      </Head>
-      <body className={sourceSans.className}>
+        ></link>
+      </head>
+
+      <body className={`${playfair.variable} ${sourceSans.variable}`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@config '../tailwind.config.js';
+
 .logo-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -43,11 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
-}
-
-.font-logo {
-  font-family: "Playfair Display", serif;
+  @apply font-playfair;
 }
 
 @theme {

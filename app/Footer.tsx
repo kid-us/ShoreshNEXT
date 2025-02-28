@@ -60,7 +60,9 @@ const Footer = () => {
                     className="lg:mb-0 mb-3 text-gray-300 lg:text-sm hover:text-white transition-colors uppercase group"
                   >
                     {nav.name}
-                    <span className="bi-arrow-up-right ms-1 text-xs group-hover:rotate-45"></span>
+                    <span className="inline-block transition-transform duration-300 group-hover:rotate-45 ms-3">
+                      <i className="bi bi-arrow-up-right text-xs"></i>
+                    </span>
                   </Link>
                 </div>
               ))}

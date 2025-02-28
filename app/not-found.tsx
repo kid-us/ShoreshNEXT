@@ -22,7 +22,7 @@ const PageNotFound = () => {
           />
           <p className="text-center font-semibold text-2xl">Page Not Found</p>
           <p className="text-center mt-5 text-gray-600">
-            The page you were looking for was either removed or doesn't exist.
+            The page you were looking for was either removed or doesn&apos;t exist.
           </p>
           <div className="text-center mt-10">
             <LinkButton name="Back Home" path="/" />

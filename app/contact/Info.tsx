@@ -10,9 +10,9 @@ const Info = () => {
 
       <p className="text-gray-800 font-medium">
         We’re here to answer your questions, discuss investment opportunities,
-        and explore ways to collaborate. Whether you're an investor, partner, or
-        just looking to learn more about Shoresh Group, we’d love to hear from
-        you.
+        and explore ways to collaborate. Whether you&apos;re an investor,
+        partner, or just looking to learn more about Shoresh Group, we’d love to
+        hear from you.
       </p>
 
       <div className="mt-5">

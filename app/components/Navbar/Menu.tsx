@@ -18,7 +18,10 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
       >
         <div className="py-7 px-5">
           <div className="flex justify-between text-xl mb-10 border-b border-gray-600 pb-5">
-            <a href="/" className="text-2xl uppercase flex lg:gap-x-5 gap-x-2">
+            <Link
+              href="/"
+              className="text-2xl uppercase flex lg:gap-x-5 gap-x-2"
+            >
               <Image src={logo} alt="Logo" className="w-13" />
 
               <div className="leading-6 w-full">
@@ -31,7 +34,7 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
                   Real Estate
                 </p>
               </div>
-            </a>
+            </Link>
 
             <button
               onClick={onClose}
@@ -64,12 +67,12 @@ const Menu = ({ onClose, menuAnimation }: Props) => {
             ))}
 
             <div>
-              <a
+              <Link
                 href="/"
                 className="flex items-center justify-center font-semibold uppercase transition-all duration-200 shadow-[3px_3px_0px_#000] h-12 px-14 hover:shadow-none rounded bg-white"
               >
                 Investor's Login
-              </a>
+              </Link>
             </div>
           </div>
 

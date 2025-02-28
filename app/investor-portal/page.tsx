@@ -5,6 +5,11 @@ import why from "@/public/images/why.jpg";
 import HowItWorks from "./HowItWorks";
 import Invest from "./Invest";
 import Hero from "./Hero";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: { absolute: "Investor Portal" },
+};
 
 const InvestorPortalPage = () => {
   const choose = [

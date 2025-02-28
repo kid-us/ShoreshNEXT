@@ -68,7 +68,7 @@ const Navbar = ({ bg }: Props) => {
               : "nav border-b border-gray-600"
           } py-3`}
         >
-          <div className="container mx-auto">
+          <div className="container mx-auto lg:px-0 px-3">
             <Nav
               bg={bg ? true : false}
               onMenuOpen={() => setHideHeader(true)}

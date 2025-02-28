@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import "./app.css";

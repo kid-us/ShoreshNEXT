@@ -1,12 +1,20 @@
+"use client";
+
 import { motion } from "motion/react";
-import { we1, we2, we3, we4, we5, we6 } from "../../assets";
-// import Container from "../Container/Container";
+import we1 from "@/public/images/we/1.jpg";
+import we2 from "@/public/images/we/2.jpg";
+import we3 from "@/public/images/we/3.jpg";
+import we4 from "@/public/images/we/4.jpg";
+import we5 from "@/public/images/we/5.jpg";
+import we6 from "@/public/images/we/6.jpg";
+
 import "./slider.css";
+import Image, { StaticImageData } from "next/image";
 
 interface Testimony {
   id: number;
   comment: string;
-  img: string;
+  img: StaticImageData;
   name: string;
   title: string;
 }
@@ -69,7 +77,7 @@ const Testimony = () => {
         Hear What Our Investors Are Saying
       </h1>
       <p className="text-center mb-20 text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing.
+        Good words from ou investors
       </p>
 
       <div
@@ -94,7 +102,7 @@ const Testimony = () => {
               }}
             >
               <div className="flex gap-x-3">
-                <img
+                <Image
                   src={t.img}
                   alt="person"
                   className="h-16 rounded-full object-cover object-center"
@@ -135,7 +143,7 @@ const Testimony = () => {
               }}
             >
               <div className="flex gap-x-3">
-                <img
+                <Image
                   src={t.img}
                   alt="person"
                   className="h-16 rounded-full object-cover object-center"

@@ -2,7 +2,7 @@
 
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
-import useToggleStore from "./store/store";
+import useToggleStore from "../store/store";
 import Header from "./components/Navbar/Header";
 import Nav from "./components/Navbar/Nav";
 

@@ -2,7 +2,7 @@
 
 import Container from "../components/Container";
 import ContactForm from "./Form";
-import useToggleStore from "../store/store";
+import useToggleStore from "../../store/store";
 import Info from "./Info";
 
 const Contact = () => {

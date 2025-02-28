@@ -1,4 +1,4 @@
-import { assets, navs } from "../../services/nav";
+import { assets, navs } from "../../../services/nav";
 import logo from "@/public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";

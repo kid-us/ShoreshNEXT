@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import useToggleStore from "../store/store";
+import useToggleStore from "../../store/store";
 
 const AboutHero = () => {
   const [showMore, setShowMore] = useState<boolean>(false);

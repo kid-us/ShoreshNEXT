@@ -1,4 +1,4 @@
-import { SoldAssets } from "../services/assets";
+import { SoldAssets } from "../../services/assets";
 
 interface Props {
   asset: SoldAssets;

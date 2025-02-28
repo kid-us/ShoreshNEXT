@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { assets } from "../../services/nav";
+import { assets } from "../../../services/nav";
 import {
   AnimatePresence,
   motion,

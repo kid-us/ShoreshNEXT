@@ -1,8 +1,8 @@
-import Advantage from "./home/Advantage";
-import Hero from "./home/Hero";
-import Portfolio from "./home/Portfolio";
-import Stat from "./home/Stat";
-import Testimony from "./home/Testimony";
+import Advantage from "./components/home/Advantage";
+import Hero from "./components/home/Hero";
+import Portfolio from "./components/home/Portfolio";
+import Stat from "./components/home/Stat";
+import Testimony from "./components/home/Testimony";
 
 export default function Home() {
   return (

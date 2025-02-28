@@ -6,7 +6,7 @@ import {
   MountainSnow,
   Tag,
 } from "lucide-react";
-import { CurrentAssets } from "../services/assets";
+import { CurrentAssets } from "../../services/assets";
 
 interface Props {
   asset: CurrentAssets;

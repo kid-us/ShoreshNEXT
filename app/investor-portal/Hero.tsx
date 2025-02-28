@@ -1,6 +1,6 @@
 "use client";
 
-import useToggleStore from "../store/store";
+import useToggleStore from "../../store/store";
 
 const Hero = () => {
   const { isToggled } = useToggleStore();

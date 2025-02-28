@@ -6,7 +6,7 @@ import {
   CurrentAssets,
   soldAssets,
   SoldAssets,
-} from "../services/assets";
+} from "../../services/assets";
 import Image, { StaticImageData } from "next/image";
 import CurrentDescription from "./CurrentDescription";
 import SoldDescription from "./SoldDescription";

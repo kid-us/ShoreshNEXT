@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import useToggleStore from "../store/store";
+import useToggleStore from "../../../store/store";
 
 type VideoFromFramesProps = {
   frames: string[];

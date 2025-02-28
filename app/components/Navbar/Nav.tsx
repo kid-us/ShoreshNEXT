@@ -54,7 +54,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
           <motion.a
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            transition={{ duration: 0.5 }}
             href="/"
             className="text-2xl uppercase flex lg:gap-x-5 gap-x-2"
           >

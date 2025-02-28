@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import useToggleStore from "../../../store/store";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type VideoFromFramesProps = {
-  frames: string[];
+  frames: StaticImageData[];
   fps?: number;
 };
 
@@ -43,6 +43,8 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
           key={index}
           src={frame}
           alt={`Frame ${index}`}
+          // width={500}
+          // height={500}
           style={{
             position: "absolute",
             top: isToggled ? 0 : "4em",
@@ -56,7 +58,7 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
             zIndex: -2,
             objectPosition: "bottom",
           }}
-          className="hero-img"
+          className="hero-img w-full h-full"
         />
       ))}
     </div>

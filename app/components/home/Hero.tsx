@@ -4,19 +4,29 @@ import { motion } from "motion/react";
 
 import ImageFromFrames from "./ImageFrame";
 import useToggleStore from "../../../store/store";
+import hero from "@/public/images/2.jpg";
+import hero2 from "@/public/images/3.jpg";
+import hero3 from "@/public/images/4.jpg";
+import hero4 from "@/public/images/5.jpg";
+import hero5 from "@/public/images/6.jpg";
+import hero6 from "@/public/images/7.jpg";
+import hero7 from "@/public/images/8.jpg";
+import hero8 from "@/public/images/9.jpg";
 
 const Hero = () => {
   const { isToggled } = useToggleStore();
 
   const lgFrames = [
-    "/images/2.jpg",
-    "/images/3.jpg",
-    "/images/4.jpg",
-    "/images/5.jpg",
-    "/images/6.jpg",
-    "/images/7.jpg",
-    "/images/8.jpg",
-    "/images/9.jpg",
+    hero,
+    hero2,
+    hero3,
+    hero3,
+    hero4,
+    hero5,
+    hero6,
+    hero6,
+    hero7,
+    hero8,
   ];
 
   return (

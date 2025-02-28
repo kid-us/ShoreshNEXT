@@ -77,7 +77,7 @@ const Testimony = () => {
         Hear What Our Investors Are Saying
       </h1>
       <p className="text-center mb-20 text-gray-500">
-        Good words from ou investors
+        Good words from our investors
       </p>
 
       <div

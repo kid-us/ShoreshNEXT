@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-
-@import "tailwindcss"; */
-
-/* @config '../tailwind.config.js' */
-
 .logo-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -56,6 +48,12 @@ h6 {
 
 .font-logo {
   font-family: "Playfair Display", serif;
+}
+
+@theme {
+  --color-btn: #e0b84d;
+  --color-icon: #e0b84d;
+  --color-secondary: #06402b;
 }
 
 @layer base {

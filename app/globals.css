@@ -29,19 +29,19 @@ body {
 }
 
 .bg {
-  background-image: url("../public/bg5.jpg");
+  background-image: url("../public/images/bg5.jpg");
   background-size: cover;
 }
 
 .bg2 {
-  background-image: url("../public/headerbg.jpg");
+  background-image: url("../public//images/headerbg.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .bg4 {
-  background-image: url("../public/bg4.jpg");
+  background-image: url("../public/images/bg4.jpg");
   background-size: cover;
 }
 

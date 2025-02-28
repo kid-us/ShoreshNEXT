@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={sourceSans.className}>
         <Navbar />
-        <main className="container mx-auto">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

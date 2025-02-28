@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import useToggleStore from "../../../store/store";
+import Image from "next/image";
 
 type VideoFromFramesProps = {
   frames: string[];
@@ -38,7 +39,7 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
       }}
     >
       {frames.map((frame, index) => (
-        <img
+        <Image
           key={index}
           src={frame}
           alt={`Frame ${index}`}
@@ -52,7 +53,6 @@ const ImageFromFrames: React.FC<VideoFromFramesProps> = ({
             transition: "opacity 0.8s ease-in-out, transform 1s ease-in-out",
             opacity: index === currentFrameIndex ? 1 : 0, // Fading effect
             transform: index === currentFrameIndex ? "scale(1)" : "scale(1.1)", // Zoom effect
-            // zIndex: index === currentFrameIndex ? 1 : 0,
             zIndex: -2,
             objectPosition: "bottom",
           }}

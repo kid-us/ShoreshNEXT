@@ -96,11 +96,13 @@ const Modal = ({ onClose, name, category }: Props) => {
               </p>
               {/* Image */}
               <div className="relative my-5 lg:h-96 h-80">
-                <Image
-                  src={asset?.imgs[currentIndex] as StaticImageData}
-                  alt={`Slide ${currentIndex + 1}`}
-                  className="w-full lg:h-96 h-80 object-contain border border-btn lg:p-1 rounded-xl"
-                />
+                {asset && (
+                  <Image
+                    src={asset.imgs[currentIndex] as StaticImageData}
+                    alt={`Slide ${currentIndex + 1}`}
+                    className="w-full lg:h-96 h-80 object-contain border border-btn lg:p-1 rounded-xl"
+                  />
+                )}
 
                 {/* Prev Button */}
                 <button

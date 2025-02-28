@@ -5,6 +5,7 @@ import { soldAssets } from "../../services/assets";
 import Container from "@/app/components/Container";
 import LinkButton from "@/app/components/Button/LinkButton";
 import Image from "next/image";
+import Modal from "@/app/components/Modal";
 
 const Portfolio = () => {
   const [modal, setModal] = useState<string | null>(null);
@@ -17,7 +18,7 @@ const Portfolio = () => {
   return (
     <>
       {/* Modal */}
-      {/* {modal && (
+      {modal && (
         <Modal
           category="Sold"
           name={modal}
@@ -26,7 +27,7 @@ const Portfolio = () => {
             document.body.style.overflow = "auto";
           }}
         />
-      )} */}
+      )}
 
       <Container>
         <h1 className="font-semibold lg:text-4xl text-3xl ">Portfolio</h1>

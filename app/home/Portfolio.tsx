@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { soldAssets } from "../../services/assets";
+import { soldAssets } from "../services/assets";
 import Container from "@/app/components/Container";
 import LinkButton from "@/app/components/Button/LinkButton";
 import Image from "next/image";

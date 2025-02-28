@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 
 import ImageFromFrames from "./ImageFrame";
-import useToggleStore from "../../store/store";
+import useToggleStore from "../store/store";
 
 const Hero = () => {
   const { isToggled } = useToggleStore();

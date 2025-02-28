@@ -1,7 +1,7 @@
-import Advantage from "./pages/home/Advantage";
-import Hero from "./pages/home/Hero";
-import Portfolio from "./pages/home/Portfolio";
-import Stat from "./pages/home/Stat";
+import Advantage from "./home/Advantage";
+import Hero from "./home/Hero";
+import Portfolio from "./home/Portfolio";
+import Stat from "./home/Stat";
 
 export default function Home() {
   return (

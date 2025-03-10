@@ -145,7 +145,7 @@ import { useState, useEffect } from "react";
 import {
   currentAssets,
   CurrentAssets,
-  // ongoing,
+  ongoing,
   soldAssets,
   SoldAssets,
 } from "../../services/assets";
@@ -174,11 +174,10 @@ const Modal = ({ onClose, name, category }: Props) => {
     } else if (category === "Sold") {
       const filtered = soldAssets.find((asset) => asset.name === name);
       setAsset(filtered);
+    } else if (category === "In Progress") {
+      const filtered = ongoing.find((asset) => asset.name === name);
+      setAsset(filtered);
     }
-    // else if (category === "In Progress") {
-    //   const filtered = ongoing.find((asset) => asset.name === name);
-    //   setAsset(filtered);
-    // }
   }, [name, category]);
 
   // Auto image change effect

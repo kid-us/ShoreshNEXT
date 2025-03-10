@@ -150,12 +150,12 @@ const AllAssets = () => {
                     <div
                       key={asset.id}
                       onClick={() => handleAssetClicked(asset.name)}
-                      className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] transition-all duration-300 shadow cursor-pointer"
+                      className="rounded-2xl p-2 border border-btn overflow-hidden hover:scale-[0.99] group transition-all duration-300 shadow cursor-pointer"
                     >
                       <Image
                         src={asset.img}
                         alt={"asset" + asset.id}
-                        className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom"
+                        className="lg:h-72 md:h-72 h-60 w-full rounded-xl object-cover object-bottom group-hover:scale-[1.03] transition-transform duration-700"
                       />
                       <div className="px-4 py-5">
                         <p className="font-semibold text-xl mb-2">

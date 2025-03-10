@@ -1,34 +1,58 @@
-import current1 from "@/public/images/assets/current_1.jpg";
-import current_11 from "@/public/images/assets/current_11.jpg";
-import current_12 from "@/public/images/assets/current_12.jpg";
-import current_13 from "@/public/images/assets/current_13.jpg";
-import current_14 from "@/public/images/assets/current_14.jpg";
-import current_15 from "@/public/images/assets/current_15.jpg";
-import current_16 from "@/public/images/assets/current_16.jpg";
+import { StaticImageData } from "next/image";
 
-import current2 from "@/public/images/assets/current_2.jpg";
-import current_21 from "@/public/images/assets/current_21.jpg";
-import current_22 from "@/public/images/assets/current_22.jpg";
-import current_23 from "@/public/images/assets/current_23.jpg";
-import current_24 from "@/public/images/assets/current_24.jpg";
-import current_25 from "@/public/images/assets/current_25.jpg";
-import current_26 from "@/public/images/assets/current_26.jpg";
+import current1 from "@/public/images/assets/current/current_1.jpg";
+import current_11 from "@/public/images/assets/current/current_11.jpg";
+import current_12 from "@/public/images/assets/current/current_12.jpg";
+import current_13 from "@/public/images/assets/current/current_13.jpg";
+import current_14 from "@/public/images/assets/current/current_14.jpg";
+import current_15 from "@/public/images/assets/current/current_15.jpg";
+import current_16 from "@/public/images/assets/current/current_16.jpg";
 
-import sold1 from "@/public/images/assets/asset_sold_1.jpg";
-import sold_11 from "@/public/images/assets/asset_sold_1_1.jpg";
-import sold_12 from "@/public/images/assets/asset_sold_1_2.jpg";
-import sold_13 from "@/public/images/assets/asset_sold_1_3.jpg";
+import current2 from "@/public/images/assets/current/current_2.jpg";
+import current_21 from "@/public/images/assets/current/current_21.jpg";
+import current_22 from "@/public/images/assets/current/current_22.jpg";
+import current_23 from "@/public/images/assets/current/current_23.jpg";
+import current_24 from "@/public/images/assets/current/current_24.jpg";
+import current_25 from "@/public/images/assets/current/current_25.jpg";
+import current_26 from "@/public/images/assets/current/current_26.jpg";
 
-import sold2 from "@/public/images/assets/asset_sold_2.jpg";
-import sold_21 from "@/public/images/assets/assets_sold_2_1.jpg";
-import sold_22 from "@/public/images/assets/assets_sold_2_2.jpg";
-import sold_23 from "@/public/images/assets/assets_sold_2_3.jpg";
-import sold_24 from "@/public/images/assets/assets_sold_2_4.jpg";
-import sold_25 from "@/public/images/assets/assets_sold_2_5.jpg";
-import sold_26 from "@/public/images/assets/assets_sold_2_5.jpg";
+import sold1 from "@/public/images/assets/sold/asset_sold_1.jpg";
+import sold_11 from "@/public/images/assets/sold/asset_sold_1_1.jpg";
+import sold_12 from "@/public/images/assets/sold/asset_sold_1_2.jpg";
+import sold_13 from "@/public/images/assets/sold/asset_sold_1_3.jpg";
+
+import sold2 from "@/public/images/assets/sold/asset_sold_2.jpg";
+import sold_21 from "@/public/images/assets/sold/assets_sold_2_1.jpg";
+import sold_22 from "@/public/images/assets/sold/assets_sold_2_2.jpg";
+import sold_23 from "@/public/images/assets/sold/assets_sold_2_3.jpg";
+import sold_24 from "@/public/images/assets/sold/assets_sold_2_4.jpg";
+import sold_25 from "@/public/images/assets/sold/assets_sold_2_5.jpg";
+import sold_26 from "@/public/images/assets/sold/assets_sold_2_5.jpg";
 
 import sold3 from "@/public/images/assets/asset_sold_3.jpg";
-import { StaticImageData } from "next/image";
+
+import ongoing1 from "@/public/images/assets/ongoing/ongoing_1.jpg";
+import ongoing_11 from "@/public/images/assets/ongoing/ongoing_11.jpg";
+import ongoing_12 from "@/public/images/assets/ongoing/ongoing_12.jpg";
+import ongoing_13 from "@/public/images/assets/ongoing/ongoing_13.jpg";
+import ongoing_14 from "@/public/images/assets/ongoing/ongoing_14.jpg";
+import ongoing_15 from "@/public/images/assets/ongoing/ongoing_15.jpg";
+
+import ongoing2 from "@/public/images/assets/ongoing/ongoing_1.jpg";
+import ongoing_21 from "@/public/images/assets/ongoing/ongoing_21.jpg";
+import ongoing_22 from "@/public/images/assets/ongoing/ongoing_22.jpg";
+import ongoing_23 from "@/public/images/assets/ongoing/ongoing_24.jpg";
+import ongoing_24 from "@/public/images/assets/ongoing/ongoing_25.jpg";
+import ongoing_25 from "@/public/images/assets/ongoing/ongoing_25.jpg";
+
+import ongoing3 from "@/public/images/assets/ongoing/ongoing_1.jpg";
+import ongoing_31 from "@/public/images/assets/ongoing/ongoing_31.jpg";
+
+import ongoing4 from "@/public/images/assets/ongoing/ongoing_1.jpg";
+import ongoing_41 from "@/public/images/assets/ongoing/ongoing_41.jpg";
+import ongoing_42 from "@/public/images/assets/ongoing/ongoing_42.jpg";
+import ongoing_43 from "@/public/images/assets/ongoing/ongoing_43.jpg";
+import ongoing_44 from "@/public/images/assets/ongoing/ongoing_44.jpg";
 
 export interface SoldAssets {
   id: number;
@@ -56,17 +80,17 @@ export interface CurrentAssets {
   location?: string;
   category: string;
   desc: string;
-  desc2: string;
-  desc3: string;
-  desc4: string;
-  desc5: string;
-  bed: number;
-  bath: number;
-  purchased: number;
-  parking: number;
-  volume: string;
-  built: number;
-  price: number;
+  desc2?: string;
+  desc3?: string;
+  desc4?: string;
+  desc5?: string;
+  bed?: number;
+  bath?: number;
+  purchased?: number;
+  parking?: number;
+  volume?: string;
+  built?: number;
+  price?: number;
   lot?: string;
   imgs: StaticImageData[];
 }
@@ -135,6 +159,46 @@ export const currentAssets: CurrentAssets[] = [
       current_25,
       current_26,
     ],
+  },
+];
+
+// Ongoing Assets
+export const ongoing: CurrentAssets[] = [
+  {
+    id: 1,
+    img: ongoing1,
+    desc: "Located in the charming town of Cambridge, 7 Oak Street is currently undergoing a full renovation, transforming this property into a modern 3-bedroom, 2-bath home with two floors. The open floor layout enhances the space, creating a bright and welcoming atmosphere. The renovation includes a brand-new kitchen with modern finishes, making it perfect for both everyday living and entertaining. With updates throughout, this home is being designed with contemporary style and comfort in mind, offering great potential in a desirable location close to local amenities and the scenic Choptank River.",
+    category: "In Progress",
+    location: "Maryland",
+    name: "MD 7 Oak Street",
+    imgs: [ongoing_11, ongoing_12, ongoing_13, ongoing_14, ongoing_15],
+  },
+  {
+    id: 2,
+    img: ongoing2,
+    desc: "Located in a peaceful, well-established neighborhood, 1721 Crestwood Cir is currently undergoing a full renovation. This property is being transformed into a modern home with updated living spaces, including a brand-new kitchen and refreshed bathrooms. One of the standout features of this property is the large basement, which offers a fantastic opportunity for creativity – whether it’s turned into an entertainment area, home office, or additional living space. With its prime location in Salisbury, MD, and the potential for personalized updates, this home is shaping up to be an incredible investment.",
+    category: "In Progress",
+    location: "Maryland",
+    name: "1721 Crestwood Cir, Salisbury, MD 21804",
+    imgs: [ongoing_21, ongoing_22, ongoing_23, ongoing_24, ongoing_25],
+  },
+  {
+    id: 3,
+    img: ongoing3,
+    desc: "Situated in the heart of historic Bridgeville, 200 S Main St is a distinctive Victorian-era home constructed in 1889. This property boasts timeless charm, featuring original architectural details such as a fireplace believed to be crafted from stone salvaged from the old Cape Henlopen lighthouse. Currently undergoing renovation, the home is being thoughtfully updated to preserve its historic character while incorporating modern amenities. The spacious layout includes four bedrooms, three bathrooms, and a full basement, offering ample opportunities for customization. Located on a corner lot, the property is within walking distance to local shops, dining, and cultural sites. Additionally, it's a short drive to the resort beaches of Ocean City and the natural beauty of Assateague National Seashore, making it a perfect location to live, work, and play.",
+    category: "In Progress",
+    location: "Bridgeville",
+    name: "200 S Main St, Bridgeville, DE 19933",
+    imgs: [ongoing3, ongoing_31],
+  },
+  {
+    id: 4,
+    img: ongoing4,
+    desc: "Located in a quiet neighborhood, 8695 Mar Lynn Dr is currently undergoing a full renovation. The home is being updated with modern finishes, including a completely new kitchen, refreshed bathrooms, and an improved layout to enhance the overall flow of the space. With a spacious interior and a large yard, this property offers plenty of potential. Conveniently located close to local amenities, schools, and parks, it is an excellent opportunity for buyers seeking a modern home in a great location.",
+    category: "In Progress",
+    location: "Maryland",
+    name: "MD 8695 Mar Lynn Dr",
+    imgs: [ongoing_41, ongoing_42, ongoing_43, ongoing_44],
   },
 ];
 

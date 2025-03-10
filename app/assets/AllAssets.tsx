@@ -1,17 +1,20 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Container from "../components/Container";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { currentAssets, soldAssets } from "../../services/assets";
+import { currentAssets, soldAssets, ongoing } from "../../services/assets";
 import useToggleStore from "../../store/store";
 import Modal from "../components/Modal";
 import Navbar from "../Navbar";
 import Image from "next/image";
 
-const categories = ["Current", "For Sale", "Sold"];
+const categories = ["Current", "In Progress", "Sold"];
+
 const AllAssets = () => {
+  const router = useRouter();
+
   const searchParams = useSearchParams();
 
   const { isToggled } = useToggleStore();
@@ -20,10 +23,7 @@ const AllAssets = () => {
 
   const [activeCategory, setActiveCategory] = useState<string>("Current");
 
-  const handleAssetClicked = (name: string) => {
-    setModal(name);
-    document.body.style.overflow = "hidden";
-  };
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,16 +32,14 @@ const AllAssets = () => {
 
     if (queryParam === "our-assets") {
       setActiveCategory("Current");
-    } else if (queryParam === "for-sale") {
-      setActiveCategory("For Sale");
     } else if (queryParam === "sold") {
       setActiveCategory("Sold");
+    } else if (queryParam === "in-progress") {
+      setActiveCategory("In Progress");
     } else {
       setActiveCategory("Current");
     }
   }, [searchParams]);
-
-  const [currentPage, setCurrentPage] = useState(1);
 
   // Filter assets based on active category
   const assets =
@@ -49,6 +47,8 @@ const AllAssets = () => {
       ? soldAssets
       : activeCategory === "Current"
       ? currentAssets
+      : activeCategory === "In Progress"
+      ? ongoing
       : [];
 
   const filteredAssets = assets.filter(
@@ -66,10 +66,35 @@ const AllAssets = () => {
     currentPage * ITEMS_PER_PAGE
   );
 
+  // Handle Page Change
   const handlePageChange = (newPage: number) => {
     if (newPage >= 1 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
+  };
+
+  // Handle Category button
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category);
+
+    const parameter =
+      category === "Sold"
+        ? "sold"
+        : category === "Current"
+        ? "current"
+        : "in-progress";
+
+    // Create a new search params object with only the selected category
+    const params = new URLSearchParams(window.location.search);
+    params.set("asset", parameter); // Update the category parameter
+
+    router.replace(`?${params.toString()}`); // Update the URL
+  };
+
+  // Handle modal
+  const handleAssetClicked = (name: string) => {
+    setModal(name);
+    document.body.style.overflow = "hidden";
   };
 
   return (
@@ -105,7 +130,7 @@ const AllAssets = () => {
                 <motion.button
                   layout
                   key={c}
-                  onClick={() => setActiveCategory(c)}
+                  onClick={() => handleCategoryClick(c)}
                   className={`font-normal ${
                     activeCategory === c
                       ? "bg-secondary text-white lg:px-10 shadow-[2px_2px_3px_0px_black] text-sm py-3"

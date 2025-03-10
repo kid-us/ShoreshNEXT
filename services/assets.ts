@@ -29,7 +29,7 @@ import sold_24 from "@/public/images/assets/sold/assets_sold_2_4.jpg";
 import sold_25 from "@/public/images/assets/sold/assets_sold_2_5.jpg";
 import sold_26 from "@/public/images/assets/sold/assets_sold_2_5.jpg";
 
-import sold3 from "@/public/images/assets/asset_sold_3.jpg";
+import sold3 from "@/public/images/assets/sold/asset_sold_3.jpg";
 
 import ongoing1 from "@/public/images/assets/ongoing/ongoing_1.jpg";
 import ongoing_11 from "@/public/images/assets/ongoing/ongoing_11.jpg";

@@ -13,24 +13,24 @@ export const footer: Nav[] = [
     path: "/assets?asset=our-assets",
   },
   {
-    id: 6,
-    name: "For Sale",
-    path: "/assets?asset=for-sale",
-  },
-  {
-    id: 7,
+    id: 5,
     name: "Recently Sold",
     path: "/assets?asset=sold",
   },
+  {
+    id: 6,
+    name: "In Progress",
+    path: "/assets?asset=in-progress",
+  },
 
   {
-    id: 8,
+    id: 7,
     name: "Privacy Policy",
     path: "/",
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Terms of Service",
     path: "/",
   },

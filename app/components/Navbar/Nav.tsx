@@ -182,6 +182,7 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
             onClick={() => {
               if (onMenuOpen) onMenuOpen();
               setMenu(true);
+              document.body.style.overflow = "hidden";
             }}
             className="bi-list text-2xl"
           ></button>
@@ -191,7 +192,10 @@ const Nav = ({ bg, onMenuOpen }: Props) => {
       {/* Menu */}
       {menu && (
         <Menu
-          onClose={() => handleCloseMenu()}
+          onClose={() => {
+            handleCloseMenu();
+            document.body.style.overflow = "auto";
+          }}
           menuAnimation={animationClass}
         />
       )}

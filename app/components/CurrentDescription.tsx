@@ -31,7 +31,7 @@ const CurrentDescription = ({ asset }: Props) => {
           >
             <div className="flex gap-x-2 items-center justify-center border rounded p-3">
               <Tag size={18} />
-              <p>${asset.price.toLocaleString()}</p>
+              {asset.price && <p>${asset.price.toLocaleString()}</p>}
             </div>
 
             <div className="flex gap-x-3 items-center justify-center border rounded p-3">
